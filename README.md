@@ -18,3 +18,15 @@ se muetran los datos recuperados de la base de datos
 
 #4 Base de Datos Actualizada
 <img width="761" height="213" alt="image" src="https://github.com/user-attachments/assets/9cf5fec4-5515-444b-9f1b-8932a291828a" />
+
+# Script base de datos 
+CREATE DATABASE prueba3;
+USE prueba3;
+
+CREATE TABLE formulario(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nombre VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	artista_favorito VARCHAR(100) NOT NULL,
+	mensaje TEXT NOT NULL
+);
