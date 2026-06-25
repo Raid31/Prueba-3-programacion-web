@@ -28,7 +28,7 @@ db.connect(err => {
 app.post('/api/guardar', (req, res) => {
     const{nombre, correo, artista_favorito, mensaje} = req.body;
 
-    const sql = 'INSERT INTO formulario (nombre, correo, artista_favorito, mensaje) VALUES (?, ?, ?, ?)';
+    const sql = 'INSERT INTO formulario (nombre, email, artista_favorito, mensaje) VALUES (?, ?, ?, ?)';
 
     db.query(sql, [nombre, correo, artista_favorito, mensaje], (err, result) => {
         if(err){
